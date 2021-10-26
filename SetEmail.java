@@ -1,3 +1,4 @@
+//Generate email adress from username and department
 package setemail;
 
 import java.util.Scanner;
