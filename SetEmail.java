@@ -20,8 +20,8 @@ class Email {
     String prezime;
     String email;
     String password;
-    String department = "X";
-    String firma = "Firma";
+    String department="";
+    String firma="";
 
     Email() {
         Scanner im = new Scanner(System.in);
