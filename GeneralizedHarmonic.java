@@ -1,7 +1,5 @@
 /*
-Generalized harmonic numbers. 
-Write a program GeneralizedHarmonic.java 
-that takes two integer command-line arguments n and r 
+Takes two integer command-line arguments n and r 
 and uses a for loop to compute the nth generalized harmonic number of order r, 
 which is defined by the following formula:
 H(n,r)=11r+12r+⋯+1nr.
