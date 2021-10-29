@@ -1,4 +1,6 @@
-package MovieList;
+//Adding movies and directors
+//Creating a playlist for movies
+//Navigate through the playlist
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -45,7 +47,8 @@ public class MovieList {
 
         ml.playMovie();
     }
-
+    
+    //method for adding movie objects to the ArrayList
     public boolean addMovie(String director, String name) {
         for (int i = 0; i < movies.size(); i++) {
             if (name.equals(movies.get(i).getMovieName())) {
@@ -56,7 +59,7 @@ public class MovieList {
         movies.add(new Movie(director, name));
         return true;
     }
-
+    //method for searching movies
     public Movie findMovie(String movieName) {
         for (int i = 0; i < movies.size(); i++) {
             Movie a = movies.get(i);
@@ -75,7 +78,8 @@ public class MovieList {
 
         }
     }
-
+    
+    //method for create playlist
     public void createPlayList(String movieName) {
         Movie a = findMovie(movieName);
         movieList.add(a);
@@ -96,7 +100,8 @@ public class MovieList {
                 + "3 - repeat\n"
                 + "4 - menu");
     }
-
+    
+    //method to navigate through the playlist
     public void playMovie() {
         Scanner sc = new Scanner(System.in);
         boolean quit = false;
